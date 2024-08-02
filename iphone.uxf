@@ -1,0 +1,56 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>270</x><y>0</y><w>230</w><h>150</h></coordinates><panel_attributes>Iphone
+--
+_- ligado: boolean_
+- aplicativos: List&lt;:Aplicativo&gt;
+--
++ ligarIphone(): void
++ desligarIphone(): void
++ acessarApp(:Aplicativo): void
++ instalarAplicativo(: Aplicativo): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>280</x><y>350</y><w>210</w><h>200</h></coordinates><panel_attributes>AparelhoTelefonico
+--
+- contatos: List&lt;:Contato&gt;
+- favoritos: List&lt;:Contato&gt;
+- correioVoz: String
+- recentes: List&lt;Ligacoes&gt;
+--
++ ligar(String numero): void
++ desligar(): void
++ AddFavorito():
++ atender(): void
++ iniciarCorreioVoz(): void
++ addLigacao(: Ligacao): void
++ consultarLigacoesRecentes(): List</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>30</x><y>340</y><w>210</w><h>130</h></coordinates><panel_attributes>ReprodutorMusical
+--
+_- tocando: boolean_
+- musicas: List&lt;:Musica&gt;
+- musicaAtual: Musica
+--
++ tocar(): void
++ pausar(): void
++ selecionarMusica(String musica): </panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>530</x><y>340</y><w>210</w><h>110</h></coordinates><panel_attributes>NavegadorInternet
+--
+- abas: List&lt;Aba&gt;
+--
+exibirPagina(String url)
+addNovaAba()
+atualizarPagina()
+fecharAba()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>280</x><y>200</y><w>210</w><h>70</h></coordinates><panel_attributes>Aplicativo
+--
+- nome: String
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>370</x><y>140</y><w>30</w><h>80</h></coordinates><panel_attributes>lt=&lt;-&gt;&gt;&gt;&gt;</panel_attributes><additional_attributes>10;60;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>130</x><y>260</y><w>530</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>250;10;250;90;250;50;510;50;510;80;510;50;10;50;10;80</additional_attributes></element><element><id>Relation</id><coordinates><x>130</x><y>460</y><w>30</w><h>90</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;10;10;70</additional_attributes></element><element><id>UMLClass</id><coordinates><x>30</x><y>530</y><w>210</w><h>80</h></coordinates><panel_attributes>Musica
+--
+- nome: String 
+- cantor: String
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>280</x><y>610</y><w>210</w><h>80</h></coordinates><panel_attributes>Contato
+--
+- nome: String
+- numero: String
+--
++ atualizarContato()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>380</x><y>540</y><w>30</w><h>90</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;10;10;70</additional_attributes></element><element><id>UMLClass</id><coordinates><x>530</x><y>500</y><w>210</w><h>80</h></coordinates><panel_attributes>Aba
+--
+- url: String
+--
++ novaBusca(:String): void
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>630</x><y>440</y><w>30</w><h>80</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element></diagram>
